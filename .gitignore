@@ -1,0 +1,29 @@
+# Dataset
+geo_dataset/
+data/
+train_labels.csv
+holdout_public/
+
+# Model outputs and predictions
+outputs/
+*.pt
+*.pth
+predictions.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Conda
+.conda/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
