@@ -1,3 +1,4 @@
+import spaces
 from pathlib import Path
 
 import gradio as gr
@@ -6,7 +7,7 @@ from transformers import AutoImageProcessor, AutoModelForImageClassification
 
 
 MODEL_DIR = Path(__file__).resolve().parent / "submission" / "model"
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda")
 
 config = torch.load(
     MODEL_DIR / "inference_config.pt",
@@ -38,6 +39,7 @@ index_to_country = {
 }
 
 
+@spaces.GPU
 @torch.inference_mode()
 def predict_image(image):
     if image is None:
@@ -119,3 +121,4 @@ demo = gr.Interface(
 
 if __name__ == "__main__":
     demo.launch()
+
