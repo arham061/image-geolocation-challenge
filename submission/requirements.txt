@@ -1,0 +1,9 @@
+numpy==2.4.6
+pandas==3.0.5
+pillow==12.3.0
+torch==2.13.0
+transformers==5.14.1
+scikit-learn==1.9.0
+tqdm==4.70.0
+k-means-constrained==0.9.1
+safetensors==0.8.0
