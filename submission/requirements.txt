@@ -8,3 +8,4 @@ tqdm==4.70.0
 k-means-constrained==0.9.1
 safetensors==0.8.0
 gradio
+spaces
